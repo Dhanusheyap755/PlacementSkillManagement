@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+nav {
+  background: #1e3a8a;
+  padding: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  font-weight: bold;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.home {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.home h1 {
+  color: #1e3a8a;
+}
