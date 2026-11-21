@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import API_BASE_URL from "../api";
 
 function AddStudent() {
 
@@ -24,7 +25,7 @@ function AddStudent() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/students",
+        `${API_BASE_URL}/api/students`,
         formData
       );
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import API_BASE_URL from "../api";
 
 function StudentList() {
   const [students, setStudents] = useState([]);
@@ -18,7 +19,7 @@ function StudentList() {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/students"
+        `${API_BASE_URL}/api/students`
       );
 
       setStudents(response.data);
@@ -42,7 +43,7 @@ function StudentList() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/students/${id}`
+        `${API_BASE_URL}/api/students/${id}`
       );
 
       alert("Student deleted successfully!");
@@ -82,7 +83,7 @@ function StudentList() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/students/${editingId}`,
+        `${API_BASE_URL}/api/students/${editingId}`,
         editData
       );
 
